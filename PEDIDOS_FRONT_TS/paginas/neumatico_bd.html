@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Pedidos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- bootstrap 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <!-- AGREGAR ARCHIVOS JS AQUI -->
+  <script src="../ts/manejadora.js"></script>
+
+</head>
+
+<body style="background-color:darkgrey">
+ <br>
+  <div class="container" style="background-color:lightblue">
+    <br>
+    <h2 style="background-color:gray;color:ghostwhite">Prueba pedidos</h2>
+
+    <h4>ABM - Pedidos - Galjot - Gauna</h4>
+
+      <table class="table table" style="width:95%">
+        <tr>
+          <td style="width:50%">
+            <table class="table table-bordered table-hover" style="background-color:rgb(195, 199, 202)">
+              <tr>
+                <td><label class="col control-label">Numero Pedido</label></td>
+                <td><input type="text" id="numeroPedido" readonly/></td>
+              </tr>
+              <tr>
+                <td><label class="col control-label">Descripcion</label></td>
+                <td><input type="text" id="descripcion" /></td>
+              </tr>
+              <tr>
+                <td><label class="col control-label">Fecha Entrega</label></td>
+                <td><input type="date" id="fechaEntrega" /></td>
+              </tr>
+              <tr>
+                <td><label class="col control-label">Correo</label></td>
+                <td><input type="text" id="correo" /></td>
+              </tr>
+              <tr>
+                <td><label class="col control-label">Nombre</label></td>
+                <td><input type="text" id="nombre" /></td>
+              </tr>
+              <tr>
+                <td><label class="col control-label">Apellido</label></td>
+                <td><input type="text" id="apellido" /></td>
+              </tr>
+              <tr>
+                <td><label class="col control-label">DNI</label></td>
+                <td><input type="text" id="dni" /></td>
+              </tr>
+              <tr>
+                <td><label class="col control-label">Precio</label></td>
+                <td><input type="text" id="precio" /></td>
+              </tr>
+              <tr>
+                <td colspan="2" class="col">
+                  <input type="button" value="Agregar" id="agregar" class="btn btn-success" />
+                  <input type="button" value="Listar" class="btn btn-info" />
+                  <input type="button" value="Modificar" class="btn btn-light" />
+                  <input type="button" value="Borrar" class="btn btn-dark"/>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <div class="" style="background-color:lavenderblush;">
+              <div id="divInfo"></div>
+              <div id="divTabla">
+                No hay tabla...
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+    <input type="hidden" id="hdnIdModificacion"><!-- PARA MODIFICAR -->
+  </div>
+</body>
+
+</html>
